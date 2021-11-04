@@ -1,0 +1,105 @@
+.section {
+  display: flex;
+  margin-top: 8rem;
+
+  .hero_text {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    .hero_header {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 4rem;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin: 0;
+    }
+    p {
+      font-size: 2rem;
+    }
+    a {
+      font-size: 2rem;
+      align-self: center;
+      border: 2px solid #222;
+      border-radius: 0.3rem;
+      padding: 1rem 2rem;
+      color: white;
+      background-color: #222;
+      overflow: hidden;
+      transition: 0.4s all;
+      position: relative;
+      &:hover {
+        background-color: white;
+        color: #222;
+        font-weight: bold;
+      }
+      &::before {
+        content: "";
+        background-color: white;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        transform: translateX(-100%) rotate(45deg);
+        transition: all 0.5s;
+        overflow: hidden;
+      }
+      &:hover::before {
+        transform: translateX(100%) rotate(45deg);
+      }
+    }
+  }
+  .hero_buttons {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    .soc_buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .soc_med {
+      font-size: 1.8rem;
+      padding: 0.5rem 1rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 0.3rem;
+      background-color: #d3d3d3;
+      color: black;
+      width: 24rem;
+    }
+    .mini_contact {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3rem;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+}
