@@ -7,6 +7,7 @@
   }
   h2 {
     font-size: 2.5rem;
+    cursor: pointer;
   }
   .accordion_div {
     border: 3px solid #444;
@@ -15,6 +16,37 @@
     .acc_item {
       display: flex;
       flex-direction: column;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+        div {
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0;
+          transition: 0.3s all;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.3);
+          }
+          &:hover p {
+            visibility: visible;
+          }
+
+          p {
+            font-size: 1.5rem;
+            visibility: hidden;
+            transition: 0.3s all;
+            font-weight: bold;
+          }
+        }
+      }
     }
   }
 }
