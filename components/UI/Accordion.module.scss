@@ -48,5 +48,30 @@
         }
       }
     }
+    .description {
+      font-size: 1.5rem;
+    }
+    .action_buttons_div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6rem;
+      margin-top: 5rem;
+
+      a {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 2rem 4rem;
+        border: 2px solid #444;
+        transition: all 0.4s;
+        overflow: hidden;
+        position: relative;
+        &:hover {
+          color: #fff;
+          background-color: #444;
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 }

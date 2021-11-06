@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/dist/client/image";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Link from "next/dist/client/link";
 
 import styles from "./Accordion.module.scss";
 
@@ -179,6 +180,9 @@ const Accordion = () => {
               </motion.div>
             </motion.div>
           )}
+          <p className={styles.description}>
+            Technologies I Use Everyday For My Projects
+          </p>
         </div>
         <div className={styles.acc_item}>
           <h2 onClick={secondAccItemHandler}>
@@ -241,6 +245,9 @@ const Accordion = () => {
               </motion.div>
             </motion.div>
           )}
+          <p className={styles.description}>
+            Technologies I Recently Started Using / Havent Used In A While
+          </p>
         </div>
         <div className={styles.acc_item}>
           <h2 onClick={thirdAccItemHandler}>
@@ -314,6 +321,13 @@ const Accordion = () => {
               </motion.div>
             </motion.div>
           )}
+          <p className={styles.description}>
+            Technologies I am Planning To Learn In Near Future
+          </p>
+        </div>
+        <div className={styles.action_buttons_div}>
+          <Link href="/projects">Explore My Projects</Link>
+          <Link href="/about">Learn More About Me</Link>
         </div>
       </motion.div>
     </section>
