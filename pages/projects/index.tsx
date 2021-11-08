@@ -1,12 +1,25 @@
 import React from "react";
 
-const Projects = ({ loadedProjects }) => {
+import ProjectItem from "../../components/UI/ProjectItem";
+
+export interface projectType {
+  id: string;
+  name: string;
+  image: string;
+  githubLink: string;
+  smallDescription?: string;
+  largeDescription?: string;
+  builtWith: string;
+  actionLink: string;
+}
+
+const Projects = ({ loadedProjects }: any) => {
   return (
-    <div>
-      {loadedProjects.map((project) => (
-        <h1 key={project.id}>{project.name}</h1>
+    <section>
+      {loadedProjects.map((project: projectType) => (
+        <ProjectItem key={project.id} project={project} />
       ))}
-    </div>
+    </section>
   );
 };
 
