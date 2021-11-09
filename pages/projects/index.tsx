@@ -15,7 +15,7 @@ export interface projectType {
 
 const Projects = ({ loadedProjects }: any) => {
   return (
-    <section>
+    <section className="project_section">
       {loadedProjects.map((project: projectType) => (
         <ProjectItem key={project.id} project={project} />
       ))}
