@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/dist/shared/lib/head";
+import Link from "next/dist/client/link";
 import Image from "next/dist/client/image";
 
 import { motion } from "framer-motion";
@@ -18,19 +19,23 @@ const ProjectItem = ({ project }: any) => {
         <title>My Projects</title>
         <meta name="Portfolio Projects" content="Projects" />
       </Head>
-      <div className={styles.image_div}>
-        <Image
-          src={project.image}
-          layout="responsive"
-          width={450}
-          height={400}
-          objectFit="cover"
-          quality={100}
-          alt="project"
-        />
-      </div>
+      <Link href={`/projects/${project.id}`}>
+        <div className={styles.image_div}>
+          <Image
+            src={project.image}
+            layout="responsive"
+            width={450}
+            height={400}
+            objectFit="cover"
+            quality={100}
+            alt="project"
+          />
+        </div>
+      </Link>
       <div className={styles.project_info}>
-        <h1>{project.name}</h1>
+        <Link href={`/projects/${project.id}`}>
+          <h1>{project.name}</h1>
+        </Link>
         <div>
           <a href={project.githubLink} rel="noreferrer" target="_blank">
             View Source Code

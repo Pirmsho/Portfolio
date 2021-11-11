@@ -13,6 +13,7 @@
   }
   .image_div {
     flex: 0.5 1 0;
+    cursor: pointer;
     img {
       border-radius: 0.5rem;
     }
@@ -32,6 +33,7 @@
         border: 1px solid black;
         border-radius: 0.5rem;
         transition: all 0.3s;
+
         &:hover {
           background-color: #222;
           color: white;
@@ -42,6 +44,7 @@
     }
   }
   h1 {
+    cursor: pointer;
     font-size: 3rem;
   }
   p {

@@ -2,7 +2,7 @@ import React from "react";
 
 import ProjectItem from "../../components/UI/ProjectItem";
 
-export interface projectType {
+interface projectType {
   id: string;
   name: string;
   image: string;
@@ -15,11 +15,14 @@ export interface projectType {
 
 const Projects = ({ loadedProjects }: any) => {
   return (
-    <section className="project_section">
-      {loadedProjects.map((project: projectType) => (
-        <ProjectItem key={project.id} project={project} />
-      ))}
-    </section>
+    <>
+      <h1 className="project_header">My Projects</h1>
+      <section className="project_section">
+        {loadedProjects.map((project: projectType) => (
+          <ProjectItem key={project.id} project={project} />
+        ))}
+      </section>
+    </>
   );
 };
 
