@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../UI/Footer";
 import Header from "../UI/Header";
 
 import styles from "./Layout.module.scss";
@@ -12,6 +13,7 @@ const Layout = (props: ChildrenProp) => {
     <div>
       <Header />
       <main className={styles.main}>{props.children}</main>
+      <Footer />
     </div>
   );
 };
