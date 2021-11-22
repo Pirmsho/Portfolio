@@ -44,7 +44,9 @@ const ProjectItem = ({ project }: any) => {
             See The App In Action
           </a>
         </div>
-        <p>Built With: {project.builtWith}</p>
+        <p>
+          Built With: <span>{project.builtWith}</span>
+        </p>
         <p>{project.smallDescription}</p>
       </div>
     </motion.div>

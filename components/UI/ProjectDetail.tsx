@@ -31,7 +31,9 @@ const ProjectDetail = ({ project }: any) => {
           />
         </div>
         <div className={styles.text_div}>
-          <h2>Built With: {project.built_with}</h2>
+          <h2>
+            Built With: <span>{project.built_with}</span>
+          </h2>
           <h3>{project.description_sm}</h3>
         </div>
       </div>
