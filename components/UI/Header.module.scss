@@ -16,10 +16,16 @@
     .second_nav_div {
       display: flex;
       justify-content: center;
+      align-items: center;
+      gap: 2rem;
       flex: 1 1 0;
       a {
         font-size: 2.5rem;
         font-weight: bold;
+      }
+      .hamburger {
+        cursor: pointer;
+        visibility: hidden;
       }
     }
     .third_nav_div {
@@ -36,6 +42,30 @@
       &:hover {
         border-bottom: 1px solid black;
         transform: scale(1.05);
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .header {
+    nav {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      .second_nav_div {
+        order: 1;
+        .hamburger {
+          visibility: visible;
+        }
+      }
+      .first_nav_div {
+        order: 2;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .third_nav_div {
+        order: 3;
       }
     }
   }

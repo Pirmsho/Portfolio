@@ -1,5 +1,6 @@
 import React, { SyntheticEvent, useState, useEffect } from "react";
 import Image from "next/dist/client/image";
+import Link from "next/dist/client/link";
 
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -124,7 +125,14 @@ const Footer = () => {
           <p>I Will Get Back To You Shortly!</p>
         </motion.div>
       )}
-      <div></div>
+      <div className={styles.dev_footer}>
+        <h2>&copy; Davit Pirmisashvili - 2021</h2>
+        <nav>
+          <Link href="/">Home</Link>
+          <Link href="/projects">My Projects</Link>
+          <Link href="/about">About Me</Link>
+        </nav>
+      </div>
     </footer>
   );
 };
