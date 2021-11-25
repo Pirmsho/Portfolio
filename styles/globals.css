@@ -37,3 +37,9 @@ a {
   text-align: center;
   margin-top: 5rem;
 }
+@media (max-width: 850px) {
+  .project_section {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -10,11 +10,11 @@ interface ChildrenProp {
 
 const Layout = (props: ChildrenProp) => {
   return (
-    <div>
+    <>
       <Header />
       <main className={styles.main}>{props.children}</main>
       <Footer />
-    </div>
+    </>
   );
 };
 

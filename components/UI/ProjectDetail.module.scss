@@ -58,3 +58,18 @@
     font-size: 2rem;
   }
 }
+@media (max-width: 850px) {
+  .detail_header {
+    gap: 4rem;
+  }
+  .detail_body {
+    flex-direction: column;
+    align-items: center;
+    .img_div {
+      width: 80vw;
+    }
+    .text_div {
+      align-items: center;
+    }
+  }
+}

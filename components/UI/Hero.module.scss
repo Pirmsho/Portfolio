@@ -103,3 +103,9 @@
     }
   }
 }
+@media (max-width: 850px) {
+  .mini_contact {
+    flex-direction: column;
+    font-weight: bold;
+  }
+}
