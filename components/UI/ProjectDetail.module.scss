@@ -73,3 +73,22 @@
     }
   }
 }
+@media (max-width: 400px) {
+  .detail_section {
+    gap: 2rem;
+    .detail_header {
+      flex-direction: column;
+      gap: 2rem;
+      a {
+        width: 18rem;
+        text-align: center;
+      }
+    }
+    .detail_body {
+      gap: 0;
+      .img_div {
+        width: 100%;
+      }
+    }
+  }
+}

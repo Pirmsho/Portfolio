@@ -55,3 +55,14 @@
     font-style: italic;
   }
 }
+@media (max-width: 400px) {
+  .project_info {
+    div {
+      flex-direction: column;
+      a {
+        width: 17rem;
+        text-align: center;
+      }
+    }
+  }
+}

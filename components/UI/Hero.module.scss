@@ -109,3 +109,10 @@
     font-weight: bold;
   }
 }
+@media (max-width: 400px) {
+  .section {
+    flex-direction: column;
+    gap: 5rem;
+    padding: 1rem;
+  }
+}

@@ -21,11 +21,13 @@
       div {
         display: flex;
         align-items: center;
+
         gap: 3rem;
         flex-wrap: wrap;
         margin-left: 1rem;
         div {
           padding: 1rem;
+          width: 8.8rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -42,9 +44,11 @@
 
           p {
             font-size: 1.5rem;
-            visibility: hidden;
             transition: 0.3s all;
             font-weight: bold;
+            @media (min-width: 400px) {
+              visibility: hidden;
+            }
           }
         }
       }
@@ -73,6 +77,34 @@
           transform: scale(1.1);
         }
       }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .acc_section {
+    h1 {
+      align-self: center;
+    }
+    h2 {
+      font-size: 2.2rem;
+      align-self: center;
+    }
+    .accordion_div {
+      border: none;
+      .acc_item {
+        div {
+          justify-content: center;
+        }
+        p {
+          align-self: center;
+        }
+      }
+    }
+  }
+  .action_buttons_div {
+    flex-direction: column;
+    a {
+      width: 28rem;
     }
   }
 }

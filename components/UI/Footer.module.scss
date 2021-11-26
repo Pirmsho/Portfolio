@@ -102,3 +102,16 @@
     }
   }
 }
+@media (max-width: 850px) {
+  .footer {
+    .contact_form {
+      width: 100%;
+      .input_group {
+        width: 90%;
+      }
+    }
+    .dev_footer {
+      flex-direction: column-reverse;
+    }
+  }
+}
