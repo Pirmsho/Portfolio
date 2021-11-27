@@ -28,22 +28,18 @@ import down from "../../public/Icons/down-arr.svg";
 
 const accordionVariant = {
   hidden: {
-    x: 100,
     opacity: 0,
   },
   visible: {
-    x: 0,
     opacity: 1,
   },
 };
 
 const parentTechnologiesVariant = {
   hidden: {
-    x: 200,
     opacity: 0,
   },
   visible: {
-    x: 0,
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
@@ -52,15 +48,10 @@ const parentTechnologiesVariant = {
 };
 const childTechnologiesVariant = {
   hidden: {
-    x: 200,
     opacity: 0,
   },
   visible: {
-    x: 0,
     opacity: 1,
-    transition: {
-      ease: "easeIn",
-    },
   },
 };
 

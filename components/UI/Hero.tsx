@@ -14,21 +14,21 @@ const parentVariant1 = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { when: "beforeChildren", staggerChildren: 0.3 },
+    transition: { when: "beforeChildren", staggerChildren: 0.5 },
   },
-  hidden: { opacity: 0, x: -100 },
+  hidden: { opacity: 0 },
 };
 const childVariant1 = {
   visible: {
     opacity: 1,
     x: 0,
   },
-  hidden: { opacity: 0, x: -100 },
+  hidden: { opacity: 0 },
 };
 const parentVariant2 = {
   visible: {
     opacity: 1,
-    y: 0,
+    // y: 0,
     transition: {
       when: "beforeChildren",
       staggerChildren: 0.2,
@@ -36,17 +36,17 @@ const parentVariant2 = {
   },
   hidden: {
     opacity: 0,
-    y: 50,
+    // y: 50,
   },
 };
 const childVariant2 = {
   visible: {
     opacity: 1,
-    y: 0,
+    // y: 0,
   },
   hidden: {
     opacity: 0,
-    y: 50,
+    // y: 50,
   },
 };
 const Hero = () => {
