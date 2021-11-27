@@ -16,14 +16,14 @@ const parentVariant1 = {
     x: 0,
     transition: { when: "beforeChildren", staggerChildren: 0.3 },
   },
-  hidden: { opacity: 0.5, x: -100 },
+  hidden: { opacity: 0, x: -100 },
 };
 const childVariant1 = {
   visible: {
     opacity: 1,
     x: 0,
   },
-  hidden: { opacity: 0.5, x: -100 },
+  hidden: { opacity: 0, x: -100 },
 };
 const parentVariant2 = {
   visible: {
@@ -35,7 +35,7 @@ const parentVariant2 = {
     },
   },
   hidden: {
-    opacity: 0.5,
+    opacity: 0,
     y: 50,
   },
 };
@@ -45,7 +45,7 @@ const childVariant2 = {
     y: 0,
   },
   hidden: {
-    opacity: 0.5,
+    opacity: 0,
     y: 50,
   },
 };
