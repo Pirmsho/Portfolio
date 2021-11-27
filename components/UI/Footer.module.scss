@@ -110,6 +110,12 @@
         width: 90%;
       }
     }
+    .submitted_div {
+      width: 90%;
+      h1 {
+        flex-direction: column;
+      }
+    }
     .dev_footer {
       flex-direction: column-reverse;
     }
