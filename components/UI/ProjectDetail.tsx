@@ -28,6 +28,7 @@ const ProjectDetail = ({ project }: any) => {
             objectFit="contain"
             alt="project"
             quality={100}
+            priority
           />
         </div>
         <div className={styles.text_div}>
