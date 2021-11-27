@@ -1,7 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default function (req, res) {
   require("dotenv").config();
-  const PASSWORD = process.env.password;
 
   let nodemailer = require("nodemailer");
   const transporter = nodemailer.createTransport({
@@ -9,7 +8,7 @@ export default function (req, res) {
     host: "smtp.gmail.com",
     auth: {
       user: "pirmisportfolio@gmail.com",
-      pass: PASSWORD,
+      pass: process.env.PASSWORD,
     },
     secure: true,
   });
