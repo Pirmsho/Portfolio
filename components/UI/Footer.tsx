@@ -83,6 +83,7 @@ const Footer = () => {
             <label htmlFor="name">Your Name</label>
             <input
               type="text"
+              id="name"
               name="name"
               required
               onChange={(e) => {
@@ -92,6 +93,7 @@ const Footer = () => {
             <label htmlFor="email">Your Email</label>
             <input
               type="email"
+              id="email"
               name="email"
               required
               onChange={(e) => {
@@ -100,6 +102,7 @@ const Footer = () => {
             />
             <label htmlFor="message">Your Message</label>
             <textarea
+              id="message"
               name="message"
               rows={4}
               cols={50}
