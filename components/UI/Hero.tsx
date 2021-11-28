@@ -97,7 +97,7 @@ const Hero = () => {
             <Image src={github} alt="github"></Image>See My Github Profile
           </motion.a>
           <motion.a
-            href="https://codepen.io/your-work/"
+            href="https://codepen.io/pirmsho"
             rel="noreferrer"
             target="_blank"
             className={styles.soc_med}
