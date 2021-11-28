@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/dist/client/image";
 import hamburger from "../../public/Icons/hamburger.svg";
@@ -14,10 +14,14 @@ const Header = () => {
     <header className={styles.header}>
       <nav>
         {isVisible && (
-          <div className={styles.first_nav_div}>
+          <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className={styles.first_nav_div}
+          >
             <Link href="/projects">My Projects</Link>
             <a href="#contact">Contact Me</a>
-          </div>
+          </motion.div>
         )}
         <div className={styles.second_nav_div}>
           <Link href="/">Davit Pirmisashvili</Link>
@@ -30,9 +34,13 @@ const Header = () => {
           />
         </div>
         {isVisible && (
-          <div className={styles.third_nav_div}>
+          <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className={styles.third_nav_div}
+          >
             <Link href="/about">About Me</Link>
-          </div>
+          </motion.div>
         )}
       </nav>
     </header>
