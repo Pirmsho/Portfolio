@@ -1,7 +1,12 @@
 import React from "react";
+import AboutHeader from "../../components/UI/AboutHeader";
 
 const About = () => {
-  return <section></section>;
+  return (
+    <section>
+      <AboutHeader />
+    </section>
+  );
 };
 
 export default About;
