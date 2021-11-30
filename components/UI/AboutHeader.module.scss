@@ -1,0 +1,21 @@
+.about_header {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .about_text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  .img_div {
+    width: 40%;
+  }
+}
