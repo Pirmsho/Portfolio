@@ -50,10 +50,15 @@ const parentTechnologiesVariant = {
 };
 const childTechnologiesVariant = {
   hidden: {
+    x: 500,
     opacity: 0,
   },
   visible: {
+    x: 0,
     opacity: 1,
+    transition: {
+      type: "easeIn",
+    },
   },
 };
 

@@ -1,0 +1,22 @@
+.about_main {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 7rem;
+  .img_div {
+    width: 50%;
+  }
+  .main_text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}

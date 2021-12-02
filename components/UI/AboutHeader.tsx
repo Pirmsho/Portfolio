@@ -1,13 +1,17 @@
 import React from "react";
 import Image from "next/dist/client/image";
 import styles from "./AboutHeader.module.scss";
-
+import { motion } from "framer-motion";
 import cs50 from "../../public/cs50.jpg";
 
 const AboutHeader = () => {
   return (
     <div className={styles.about_header}>
-      <div className={styles.about_text}>
+      <motion.div
+        initial={{ scale: 0.5, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        className={styles.about_text}
+      >
         <h1>Little Bit About Me</h1>
         <p>
           I originally come from Georgia, where I studied Business
@@ -22,10 +26,15 @@ const AboutHeader = () => {
           enjoy learning and discovering new exciting things, and that is
           exactly how I found Web Development.
         </p>
-      </div>
-      <div className={styles.img_div}>
+      </motion.div>
+      <motion.div
+        initial={{ x: 1000, opacity: 0 }}
+        animate={{ x: 0, opacity: 1, rotate: -720 }}
+        transition={{ type: "spring", stiffness: 60 }}
+        className={styles.img_div}
+      >
         <Image src={cs50} alt="cs50 certificate"></Image>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -6,6 +6,8 @@
   .about_text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 40%;
     h1 {
       text-align: center;
@@ -17,5 +19,6 @@
   }
   .img_div {
     width: 40%;
+    border-radius: 0.5rem;
   }
 }
