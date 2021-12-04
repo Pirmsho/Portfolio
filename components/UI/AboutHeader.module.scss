@@ -22,3 +22,18 @@
     border-radius: 0.5rem;
   }
 }
+@media (max-width: 850px) {
+  .about_header {
+    flex-direction: column-reverse;
+    gap: 5rem;
+    .about_text {
+      width: 80%;
+    }
+    .img_div {
+      width: 80%;
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+}

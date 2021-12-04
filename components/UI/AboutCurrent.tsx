@@ -5,7 +5,7 @@ import styles from "./AboutCurrent.module.scss";
 
 const parentVariant = {
   hidden: {
-    x: 600,
+    x: 200,
     opacity: 0,
   },
   visible: {

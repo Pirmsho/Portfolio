@@ -33,7 +33,7 @@ const AboutHeader = () => {
         transition={{ type: "spring", stiffness: 60 }}
         className={styles.img_div}
       >
-        <Image src={cs50} alt="cs50 certificate"></Image>
+        <Image src={cs50} priority alt="cs50 certificate"></Image>
       </motion.div>
     </div>
   );

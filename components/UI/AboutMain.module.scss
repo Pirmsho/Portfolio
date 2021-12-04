@@ -20,3 +20,15 @@
     }
   }
 }
+@media (max-width: 850px) {
+  .about_main {
+    flex-direction: column;
+    gap: 5rem;
+    .img_div {
+      width: 90%;
+    }
+    .main_text {
+      width: 80%;
+    }
+  }
+}
