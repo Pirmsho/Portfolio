@@ -1,8 +1,9 @@
-import React from "react";
-import Image from "next/dist/client/image";
-import styles from "./AboutHeader.module.scss";
-import { motion } from "framer-motion";
-import cs50 from "../../public/cs50.jpg";
+import React from 'react'
+import Image from 'next/dist/client/image'
+import styles from './AboutHeader.module.scss'
+import { motion } from 'framer-motion'
+import cs50 from '../../public/cs50.jpg'
+import me from '../../public/me.jpg'
 
 const AboutHeader = () => {
   return (
@@ -30,13 +31,13 @@ const AboutHeader = () => {
       <motion.div
         initial={{ x: 1000, opacity: 0 }}
         animate={{ x: 0, opacity: 1, rotate: -720 }}
-        transition={{ type: "spring", stiffness: 60 }}
+        transition={{ type: 'spring', stiffness: 60 }}
         className={styles.img_div}
       >
-        <Image src={cs50} priority alt="cs50 certificate"></Image>
+        <Image src={me} priority alt="Me"></Image>
       </motion.div>
     </div>
-  );
-};
+  )
+}
 
-export default AboutHeader;
+export default AboutHeader

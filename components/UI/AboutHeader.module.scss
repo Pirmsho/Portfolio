@@ -19,7 +19,9 @@
   }
   .img_div {
     width: 40%;
-    border-radius: 0.5rem;
+    img {
+      border-radius: 50%;
+    }
   }
 }
 @media (max-width: 850px) {
