@@ -31,7 +31,7 @@ export async function getStaticProps() {
     'https://portfolio-380c8-default-rtdb.europe-west1.firebasedatabase.app/projects.json'
   )
   const projects = await res.json()
-  const loadedProjects = []
+  const loadedProjects: projectType[] | null = []
   for (const key in projects) {
     loadedProjects.push({
       id: key,
@@ -46,7 +46,7 @@ export async function getStaticProps() {
   }
   return {
     props: {
-      loadedProjects,
+      loadedProjects: JSON.parse(JSON.stringify(loadedProjects)),
     },
     revalidate: 3600,
   }

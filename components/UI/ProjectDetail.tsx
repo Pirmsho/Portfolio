@@ -1,8 +1,8 @@
-import React from "react";
-import Image from "next/dist/client/image";
-import styles from "./ProjectDetail.module.scss";
+import React from 'react'
+import Image from 'next/dist/client/image'
+import styles from './ProjectDetail.module.scss'
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 const ProjectDetail = ({ project }: any) => {
   return (
@@ -40,7 +40,7 @@ const ProjectDetail = ({ project }: any) => {
       </div>
       <p>{project.description_lg}</p>
     </motion.section>
-  );
-};
+  )
+}
 
-export default ProjectDetail;
+export default ProjectDetail

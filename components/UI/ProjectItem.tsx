@@ -1,11 +1,11 @@
-import React from "react";
-import Head from "next/dist/shared/lib/head";
-import Link from "next/dist/client/link";
-import Image from "next/dist/client/image";
+import React from 'react'
+import Head from 'next/dist/shared/lib/head'
+import Link from 'next/dist/client/link'
+import Image from 'next/dist/client/image'
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
-import styles from "./ProjectItem.module.scss";
+import styles from './ProjectItem.module.scss'
 
 const ProjectItem = ({ project }: any) => {
   return (
@@ -29,6 +29,7 @@ const ProjectItem = ({ project }: any) => {
             objectFit="cover"
             quality={100}
             alt="project"
+            priority
           />
         </div>
       </Link>
@@ -50,7 +51,7 @@ const ProjectItem = ({ project }: any) => {
         <p>{project.smallDescription}</p>
       </div>
     </motion.div>
-  );
-};
+  )
+}
 
-export default ProjectItem;
+export default ProjectItem
