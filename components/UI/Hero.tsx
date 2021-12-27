@@ -1,36 +1,36 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react'
+import { motion } from 'framer-motion'
 
-import Image from "next/dist/client/image";
+import Image from 'next/dist/client/image'
 
-import styles from "./Hero.module.scss";
-
-import github from "../../public/Icons/github.svg";
-import codepen from "../../public/Icons/codepen.svg";
-import mail from "../../public/Icons/mail.svg";
-import whatsapp from "../../public/Icons/whatsapp.svg";
+import styles from './Hero.module.scss'
+import user from '../../public/Icons/user.svg'
+import github from '../../public/Icons/github.svg'
+import codepen from '../../public/Icons/codepen.svg'
+import mail from '../../public/Icons/mail.svg'
+import whatsapp from '../../public/Icons/whatsapp.svg'
 
 const parentVariant1 = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { when: "beforeChildren", staggerChildren: 0.4 },
+    transition: { when: 'beforeChildren', staggerChildren: 0.4 },
   },
   hidden: { opacity: 0 },
-};
+}
 const childVariant1 = {
   visible: {
     opacity: 1,
     x: 0,
   },
   hidden: { opacity: 0 },
-};
+}
 const parentVariant2 = {
   visible: {
     opacity: 1,
     // y: 0,
     transition: {
-      when: "beforeChildren",
+      when: 'beforeChildren',
       staggerChildren: 0.2,
     },
   },
@@ -38,7 +38,7 @@ const parentVariant2 = {
     opacity: 0,
     // y: 50,
   },
-};
+}
 const childVariant2 = {
   visible: {
     opacity: 1,
@@ -48,7 +48,7 @@ const childVariant2 = {
     opacity: 0,
     // y: 50,
   },
-};
+}
 const Hero = () => {
   return (
     <section className={styles.section}>
@@ -106,6 +106,19 @@ const Hero = () => {
           >
             <Image src={codepen} alt="codepen"></Image>See My Codepen Page
           </motion.a>
+          <motion.a
+            href="/Resume.pdf"
+            rel="noreferrer"
+            target="_blank"
+            className={styles.soc_med}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            download="DavitResume"
+          >
+            {' '}
+            <Image src={user} alt="Resume" />
+            Download My Resume
+          </motion.a>
         </motion.div>
         <motion.div
           variants={parentVariant2}
@@ -126,7 +139,7 @@ const Hero = () => {
         </motion.div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
