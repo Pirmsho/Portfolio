@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import styles from "./AboutCurrent.module.scss";
+import React, { useEffect } from 'react'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import styles from './AboutCurrent.module.scss'
 
 const parentVariant = {
   hidden: {
@@ -15,7 +15,7 @@ const parentVariant = {
       staggerChildren: 0.3,
     },
   },
-};
+}
 const childVariant = {
   hidden: {
     x: 600,
@@ -25,16 +25,16 @@ const childVariant = {
     x: 0,
     opacity: 1,
   },
-};
+}
 
 const AboutCurrent = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      controls.start('visible')
     }
-  }, [inView, controls]);
+  }, [inView, controls])
   return (
     <motion.div
       ref={ref}
@@ -50,9 +50,9 @@ const AboutCurrent = () => {
         and decided to become a full-stack developer.
       </motion.p>
       <motion.p variants={childVariant}>
-        My plan is to work as a frontend developer, as I feel quite confident in
-        my skills in this area, and learn backend infrastructure on the side, to
-        transition to full-stack development.
+        My plan is to improve as a frontend developer, as I feel quite confident
+        in my skills in this area, and learn backend infrastructure on the side,
+        to transition to full-stack development.
       </motion.p>
       <motion.p variants={childVariant}>
         My focus is on writing functional, clean code and trying to be a
@@ -60,7 +60,7 @@ const AboutCurrent = () => {
         future in this industry!
       </motion.p>
     </motion.div>
-  );
-};
+  )
+}
 
-export default AboutCurrent;
+export default AboutCurrent

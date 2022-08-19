@@ -64,7 +64,7 @@ const Hero = () => {
             My Name Is Davit Pirmisashvili
           </motion.h3>
           <motion.h3 variants={childVariant1}>
-            I am a Software Developer, Based In Germany, Currently Focusing on
+            I am a Software Developer, Based In Georgia, Currently Focusing on
             Front-End Development.
           </motion.h3>
           <motion.p variants={childVariant1}>
@@ -134,7 +134,7 @@ const Hero = () => {
           </motion.div>
           <motion.div>
             <Image src={whatsapp} alt="whatsapp icon" />
-            <a href="tel:+4917657850065">+49 176 57850065</a>
+            <a href="tel:+4917657850065">+995 551119667</a>
           </motion.div>
         </motion.div>
       </div>
