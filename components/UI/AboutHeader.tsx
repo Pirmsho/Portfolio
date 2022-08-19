@@ -24,7 +24,7 @@ const AboutHeader = () => {
         </p>
         <p>
           My hobbies include Programming, Fitness and Listening to music. I
-          enjoy learning and discovering new exciting things, and that is
+          enjoy learning and discovering new exciting things, and this is
           exactly how I found Web Development.
         </p>
       </motion.div>
